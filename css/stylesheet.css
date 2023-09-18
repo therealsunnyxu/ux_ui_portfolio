@@ -1,0 +1,469 @@
+/* TYPOGRAPHY */
+@import url("https://fonts.googleapis.com/css?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+h1,
+h2,
+h3,
+p,
+li {
+    color: black;
+}
+
+h1,
+h2,
+h3,
+a.button,
+button,
+.navbar-brand {
+    font-family: "Lexend", "Roboto", "Arial", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+.primaryNavHeader,
+a.button,
+button {
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 52px;
+}
+
+p,
+li,
+.tinyText {
+    font-family: "Work Sans", "Roboto", "Arial", sans-serif;
+}
+
+.fanciLiInside p {
+    margin: 0;
+}
+
+p,
+li,
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.noBullets {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.tinyText {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+.footerNav li,
+.footerNav a,
+#footerCopyright p,
+a.button,
+button,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-item a:hover,
+.nav-item.active a,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #eee;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    text-decoration: underline;
+}
+
+.nav-item.active a {
+    font-weight: bold;
+}
+
+.fancyLi a {
+    color: black;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+a.button,
+button {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* The rest of it */
+.scrollToTop {
+    position: fixed;
+    right: 64px;
+    bottom: 64px;
+}
+
+.button {
+    display: flex;
+    padding: 10px 16px;
+    border-radius: 16px;
+    align-self: flex-start;
+    border: none;
+    gap: 8px;
+    width: fit-content;
+    background-color: #003262;
+}
+
+.scrollToTopButton {
+    /*background-color: black;*/
+    opacity: 0.5
+}
+
+body {
+    margin: 0;
+}
+
+.scrollToTopButton .upArrow {
+    rotate: -90deg;
+}
+
+.upArrow path {
+    fill: white;
+}
+
+.scrollToTopButton:hover {
+    opacity: 1;
+}
+
+.scrollToTopButton:focus {
+    outline-color: #003262;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #005AAD;
+}
+
+.navbar,
+footer,
+#pageContent {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-devil {
+    background-color: #666;
+}
+
+footer,
+#pageContent {
+    padding: 16px;
+}
+
+.navbar {
+    width: 1440px;
+    align-self: center;
+}
+
+#pageContent {
+    min-height: calc(100vh - 208px - 64px);
+
+}
+
+.navbar {
+    min-height: 64px;
+    align-items: center;
+    z-index: 9001;
+}
+
+#headerInner,
+#footerInner,
+#pageContentInner {
+    width: 1440px;
+    display: flex;
+}
+
+#headerInner {
+    padding: 0px 16px;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar-nav,
+.navbar-toggler {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headerNav {
+    flex: 1;
+}
+
+.headerNav ul,
+.footerNav ul,
+#sideBar ul {
+    display: flex;
+    margin: 0;
+}
+
+.headerNav ul {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footerNav ul,
+#sideBar ul {
+    flex-direction: column;
+}
+
+#footerInner {
+    padding: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    flex: 1;
+    align-self: stretch;
+}
+
+#footerCopyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+ul,
+ol {
+    gap: 16px;
+    padding: 0px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+#pageContentInner {
+    align-self: flex-start;
+    padding-top: 64px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#sideBar {
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    width: 192px;
+    padding: 16px;
+}
+
+#pageContentRight {
+    flex: 1;
+}
+
+.heroImg {
+    height: 256px;
+    width: 256px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #666;
+}
+
+.heroImg img {
+    height: 100%;
+    object-fit: contain;
+    clip-path: circle(128px at center);
+    box-shadow: 4px 4px 8px #666;
+}
+
+.section {
+    display: flex;
+    gap: 16px;
+    padding: 64px;
+    flex-direction: column;
+
+}
+
+.sectionCentered {
+    align-items: center;
+}
+
+#aboutMe {
+    flex-direction: row;
+}
+
+.cardWrapper {
+    display: flex;
+}
+
+.customCard {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.toolCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolCard ul {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.skillCardWrapper {
+    gap: 16px;
+}
+
+.projectCardWrapper {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.projectCardWrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.projectCardImg {
+    background-color: #DDD;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.projectCardText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.projectCardText p,
+.projectCardText h3 {
+    margin-bottom: 0;
+}
+
+.fancyLiWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fancyLi {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fancyLi img {
+    height: 44px;
+    width: 44px;
+}
+
+@media (min-width: 64.01em) {
+    .projectCard {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projectCardImg {
+        width: 50%;
+        order: 2;
+    }
+
+    .projectCardText {
+        width: 50%;
+        order: 1;
+    }
+}
+
+@media (max-width: 64em) {
+    #aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMeRight {
+        order: 1;
+        align-self: center;
+    }
+
+    .aboutMeLeft {
+        order: 2;
+    }
+}
+
+@media (max-width: 48em) {
+    #sideBar {
+        display: none;
+    }
+
+    .scrollToTop {
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+@media (max-width: 32em) {
+    #footerInner {
+        flex-direction: column;
+    }
+}
