@@ -42,7 +42,8 @@ h1 {
 
 p,
 li,
-.tinyText {
+.tinyText,
+figcaption {
     font-family: "Work Sans", "Roboto", "Arial", sans-serif;
 }
 
@@ -339,6 +340,10 @@ ol {
     align-items: center;
 }
 
+.section figure img {
+    width: 50%
+}
+
 #aboutMe {
     flex-direction: row;
 }
@@ -402,6 +407,14 @@ ol {
     margin-bottom: 0;
 }
 
+.invitation {
+    align-items: center;
+}
+
+.invitationButton {
+    align-self: center;
+}
+
 .fancyLiWrapper {
     display: flex;
     flex-direction: column;
@@ -449,6 +462,10 @@ ol {
     .aboutMeLeft {
         order: 2;
     }
+
+    .section figure img {
+        width: 100%
+    }
 }
 
 @media (max-width: 48em) {
@@ -460,6 +477,8 @@ ol {
         bottom: 16px;
         right: 16px;
     }
+
+
 }
 
 @media (max-width: 32em) {
